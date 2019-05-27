@@ -1,31 +1,47 @@
 {
   "name": "schedule",
+  "productName": "Schedule",
   "version": "0.1.0",
+  "main": "main.js",
+  "homepage": ".",
+  "DEV": true,
   "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --history-api-fallback",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron-start": "webpack && electron .",
+    "linux-packager": "electron-packager . --platform=linux",
+    "window-packager": "electron-packager . --platform=win32",
+    "macos-packager": "electron-packager . --platform=darwin",
+    "all-packager": "electron-packager . --all"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "ant": "^0.2.0",
+    "antd": "^3.2.1",
+    "electron": "^1.7.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "react-bootstrap": "^0.31.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.13.2",
+    "webpack-dev-server": "^2.9.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.5",
+    "electron-packager": "^13.1.1",
+    "react-router-dom": "^4.1.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
