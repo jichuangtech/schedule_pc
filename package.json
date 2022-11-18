@@ -21,7 +21,7 @@
     "ant": "^0.2.0",
     "antd": "^3.19.1",
     "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0",
+    "babel-loader": "^9.1.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "electron": "^1.7.6",
@@ -30,7 +30,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.3",
     "react-router": "^4.0.0",
-    "react-scripts": "1.1.1",
+    "react-scripts": "5.0.1",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.2.0",
@@ -41,7 +41,7 @@
     "babel-plugin-import": "^1.6.5",
     "electron-packager": "^13.1.1",
     "react-router-dom": "^4.1.2",
-    "webpack": "^2.2.1",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.4.1"
   }
 }
